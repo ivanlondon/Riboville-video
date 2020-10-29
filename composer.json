@@ -1,0 +1,129 @@
+{
+    "name": "drupal/legacy-project",
+    "description": "Project template for Drupal 8 projects with composer following drupal/drupal layout",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "defuse/php-encryption": "^2.2",
+        "drupal/addanother": "^1.1",
+        "drupal/addtoany": "1.14",
+        "drupal/admin_toolbar": "2.3",
+        "drupal/admintheme": "1.1",
+        "drupal/amp": "3.4",
+        "drupal/backup_migrate": "4.1",
+        "drupal/bee": "^1.1",
+        "drupal/belgrade": "^1.0",
+        "drupal/bfd": "^2.54",
+        "drupal/bootstrap": "3.23",
+        "drupal/bootstrap4": "^2.1",
+        "drupal/bootstrap_simple_carousel": "^1.43",
+        "drupal/commerce": "2.20",
+        "drupal/core-composer-scaffold": "^8.8",
+        "drupal/core-project-message": "^8.8",
+        "drupal/core-recommended": "^8.8",
+        "drupal/core-vendor-hardening": "^8.8",
+        "drupal/empty_page": "3.0",
+        "drupal/entity_save_and_addanother": "^1.0",
+        "drupal/flexslider": "^2.0",
+        "drupal/fontawesome": "^2.17",
+        "drupal/google_analytics": "2.5",
+        "drupal/jquery_ui": "^1.4",
+        "drupal/libraries": "^3.0@alpha",
+        "drupal/maestro": "2.1",
+        "drupal/menu_item_extras": "^2.12",
+        "drupal/modal_page": "^2.18",
+        "drupal/module_filter": "3.1",
+        "drupal/onepage_zymphonies_theme": "1.4",
+        "drupal/pathauto": "1.8",
+        "drupal/php_ffmpeg": "^1.1",
+        "drupal/redirect": "1.6",
+        "drupal/responsive_menu": "^4.4",
+        "drupal/responsive_slideshow": "^1.2",
+        "drupal/root": "1.5",
+        "drupal/seo_checklist": "4.1",
+        "drupal/twig_tweak": "^2.6",
+        "drupal/video": "^1.4",
+        "drupal/video_embed_html5": "^1.2",
+        "drupal/videojs": "^1.0",
+        "drupal/views_contact_form": "^1.0",
+        "drupal/views_slideshow": "4.7",
+        "drupal/we_megamenu": "^1.11",
+        "drupal/webform": "5.19",
+        "drupal/yg_hotel": "2.0",
+        "drupal/yoast_seo": "1.5"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./"
+            }
+        },
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}

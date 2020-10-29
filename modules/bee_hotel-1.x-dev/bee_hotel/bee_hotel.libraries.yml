@@ -1,0 +1,10 @@
+main:
+  version: 1.x
+  css:
+    layout:
+      assets/css/main-layout.css: {}
+    theme:
+      assets/css/main-theme.css: {}
+  js:
+    assets/js/main.js: {}
+    assets/js/alter.js: {}

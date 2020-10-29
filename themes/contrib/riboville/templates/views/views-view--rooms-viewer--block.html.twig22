@@ -1,0 +1,106 @@
+
+<!-- <section id="welcome">
+<div id="carouselYGHotel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+         {% for result in view.result %}
+              <li data-target="#carouselYGHotel" data-slide-to="{{ loop.index-1 }}" class="{% if ( loop.index == 1 )  %}active{% endif %}"></li>
+              {% endfor %}
+        </ol>
+        <div class="carousel-inner" role="listbox">
+        {% for result in view.result %}
+          <div class="carousel-item {% if ( loop.index == 1 )  %}active{% endif %}" style="background-image: url('img/CONFERNCE.jpg')">
+            <div class="container"><div class="carousel-caption d-none d-md-block wow fadeInUp">
+                    <h2>{{ view.field.title.value(view.result[loop.index-1]) | striptags }}</h2>
+                    <p>{{ view.field.body.value(view.result[loop.index-1]) | striptags }}</p>
+
+            </div>
+            </div>
+          </div>
+           {% endfor %}
+        </div>
+</div>
+</section>     -->
+
+
+<!--ROOMS START-->
+<section class="main-sec2">
+        <div class="container ">
+        <div class="row text-center">
+        <div class="col-12">
+        <div class="section_title text-center">
+        <div>Welcome</div>
+        
+        <h2 class="roomtext">Our Suites</h2>
+        </div>
+        
+        <p>The Riboville accommodates up to 32 guests, sharing 16 spacious, luxury King and Twin Suites within the prestigious Waterfall Estate, situated in the heart of Johannesburg’s northern suburbs. The Riboville offers a unique natural eco respite of tranquility to escape with the sounds of nature echoing from the hustle of everyday life.</p>
+        
+        <hr class="style-eight " /></div>
+        </div>
+        
+        <div class="main-sec">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-8 col-12">
+        <div class="card mb-5">
+        <div class="carousel slide room-slide" data-ride="carousel" id="carouselExampleCaptions">
+                <ol class="carousel-indicators">
+                        {% for result in view.result %}
+                             <li data-target="#carouselYGHotel" data-slide-to="{{ loop.index-1 }}" class="{% if ( loop.index == 1 )  %}active{% endif %}"></li>
+                             {% endfor %}
+                       </ol>
+        
+        <div class="carousel-inner">
+                {% set url = thestue  %}
+                {% set url = view.field_slide_image.uri.value %}
+                {% for result in view.result %}
+                <div class="carousel-item {% if ( loop.index == 1 )  %}active{% endif %}"   style="background-image: url('{{ url }}')">
+                        {{ view.field_slide_image.content }}
+
+                        {{ view.field_slide_image.value(view.result[loop.index-1]) | striptags }}
+                  <div class="container"><div class="carousel-caption d-none d-md-block wow fadeInUp">
+                          <h2>{{ view.field.title.value(view.result[loop.index-1]) | striptags }}</h2>
+                          <p>{{ view.field.body.value(view.result[loop.index-1]) | striptags }}</p>
+      
+                  </div>
+                  </div>
+                </div>
+                 {% endfor %}
+
+        </div>
+        <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleCaptions" role="button"><span class="sr-only">Previous</span> </a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleCaptions" role="button"> <span class="sr-only">Next</span> </a></div>
+        
+        <div class="card-body">
+        <h2 class="roomtext">VIP Suite</h2>
+        
+        <p class="card-text">All of the deluxe amenities in our most luxurious suite with additional services, pampering and butler.</p>
+        <a class="btn btn-info" href="our-rooms">BOOK</a></div>
+        </div>
+        </div>
+        
+        <div class="col-lg-4 col-12">
+        <div class="card "><img alt="..." class="card-img-top" src="img/suite4.jpg" /></div>
+        
+        <div class="card mt-5"><img alt="..." class="card-img-top" src="img/suite5.jpg" /></div>
+        
+        <h2 class="roomtext delux">Deluxe Amenities</h2>
+        
+        <ul class="tagwords">
+          <li class="carditem">Large luxurious modern bathroom with bath separate shower</li>
+          <li class="carditem">Flat screen TV with DSTV</li>
+          <li class="carditem">Fully Air-Conditioned</li>
+          <li class="carditem">Under-floor heating</li>
+          <li class="carditem">Mini bar &amp; fridge</li>
+          <li class="carditem">Tea &amp; coffee station</li>
+          <li class="carditem">Wi-Fi</li>
+          <li class="carditem">Safe</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        
+
+        

@@ -1,0 +1,5 @@
+bee_hotel.node.book_this_room:
+  route_name: 'bee_hotel.node.book_this_room'
+  title: '* Book this Room'
+  appears_on:
+    - entity.node.canonical

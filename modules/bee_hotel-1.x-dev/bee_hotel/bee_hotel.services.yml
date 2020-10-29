@@ -1,0 +1,12 @@
+services:
+  access_check.bee_hotel.book-this-room:
+    class: Drupal\bee_hotel\Access\BeeHotelBookThisRoomAccessCheck
+    arguments: ['@entity.manager']
+    tags:
+      - { name: access_check, applies_to: _bee_hotel_book_this_room_access }
+  bee_hotel.saleprice_resolver:
+    class: Drupal\bee_hotel\Resolvers\SalepriceResolver
+    arguments: ['@request_stack']
+    tags:
+      #priority always +1 of the original bee service
+      - { name: commerce_price.price_resolver, priority: 601 }

@@ -1,0 +1,6 @@
+create bee_hotel book_this_room:
+  title: 'Book this Room'
+  description: 'Book the current Room'
+
+permission_callbacks:
+  - Drupal\bee_hotel\BeeHotelPermissions::permissions

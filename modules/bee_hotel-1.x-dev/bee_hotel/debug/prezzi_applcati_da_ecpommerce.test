@@ -1,0 +1,25 @@
+
+
+A. TEST prezzi applicati
+data: 03 aprile 2020
+=====================
+
+Magnolia
+--------
+
+    . prezzo content BEE: 888€
+    . MG2	2 Guests	€75.00	Published
+
+
+    Comportamente desiderato:
+    .applica il prezzo variant scelto dall'utnete
+
+
+    Il test Fallisce : applica prezzo 888€ (prezzo da node > edit > BEE)
+
+    fino a http://d8.devel.freereservation.bbsavoia.it/cart il cart è ok.
+    quando passiamo a http://d8.devel.freereservation.bbsavoia.it/checkout/16/order_information
+    viene applciato invece il prezzo BEE
+
+    Risolto con un price resolver, che esclude quello "BEE"
+

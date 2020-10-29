@@ -1,0 +1,14 @@
+name: BEE Hotel
+type: module
+description: 'Improves the BEE module with Hotel-tailored features'
+package: bat
+core: '8.x'
+
+dependencies:
+  - drupal:views
+  - bat:bee
+
+# Information added by Drupal.org packaging script on 2020-04-12
+version: '1.x-dev'
+project: 'bee_hotel'
+datestamp: 1586701315

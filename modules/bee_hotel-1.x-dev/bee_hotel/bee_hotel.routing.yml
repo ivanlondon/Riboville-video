@@ -1,0 +1,10 @@
+bee_hotel.node.book_this_room:
+  path: '/node/{node}/book-this-room'
+  defaults:
+    _form: '\Drupal\bee_hotel\Form\BookThisRoomForm'
+  options:
+    parameters:
+      node:
+        type: entity:node
+  requirements:
+    _bee_hotel_book_this_room_access: 'node'

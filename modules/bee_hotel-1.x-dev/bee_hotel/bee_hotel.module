@@ -1,0 +1,15 @@
+<?php
+
+ \Drupal::moduleHandler()->invokeAll('bee_hotel_dynamic_price', [&$data]);
+
+function bee_hotel_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'bee_hotel/main';
+}
+
+// hook this for your own price logic
+function bee_hotel_dynamic_price($data)  {
+  // At simplest: use default BEE price set in node/ID/edit
+  $entity = $data['entity'];
+  $amount = $entity->get('price')->number;
+  return $amount;
+}
