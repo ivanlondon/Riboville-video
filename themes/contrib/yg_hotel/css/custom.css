@@ -366,11 +366,11 @@ input#edit-check-in-time , input#edit-check-out-time{
 }
 #footer {
     padding: 17px 0px;
-    background-color: #dcdcdc;
+    background-color: #000;
     border-top: 3.8px solid #d2ac67;
 }
 .page-footer img {
-    width: 150px;
+    width: 130px;
 }
 #footer h6 {
     color: #d2ac67;
@@ -640,7 +640,7 @@ header h1 {
 }
 .card {
     border-radius: 0;
-    border: solid 2px #d2ac67;
+    border: none;
     
 }
 .roomtext {
@@ -761,7 +761,7 @@ header h1 {
         width: 1155px;
         left: -287px;
         margin-left: -.0625rem;
-        margin-top: 57px;
+        margin-top: 0px;
         padding: .625rem .9375rem .625rem .9375rem;
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
@@ -1208,8 +1208,7 @@ visibility: hidden !important;
 
 .path-node .flexslider {
     margin: 0 0 0px;
-    background: #d2ac67;
-    border: 4px solid #d2ac67 ;
+
     position: relative;
     zoom: 1;
     -webkit-border-radius: 4px;
@@ -1234,3 +1233,48 @@ visibility: hidden !important;
   color:#fff;
 }
 
+.staylink{
+    width: 150px;
+    margin-bottom: 105px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border-color: #d2ac67 !important;
+    color: #d2ac67 !important;
+    margin-left: 10px;
+}
+.webform-progress-tracker .progress-step .progress-marker, .webform-progress-tracker .progress-step:hover .progress-marker , .webform-progress-tracker .progress-step::after {
+   
+    background-color:#d2ac67;
+}
+.webform-progress-tracker .progress-step.is-active .progress-marker, .webform-progress-tracker .progress-step.is-active:hover .progress-marker {
+    background-color: #FFF;
+    color: #d2ac67;
+    border: 1px solid #d2ac67;
+}
+.webform-progress-tracker .progress-step.is-complete .progress-marker, .webform-progress-tracker .progress-step.is-complete:hover .progress-marker, .webform-progress-tracker .progress-step.is-complete::after {
+    background-color: #d2ac67;
+}
+.webform-progress-tracker .progress-step.is-active .progress-text {
+    color: #b58836;
+}
+
+input[type="submit" i] {
+    appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 1px;
+    border-style: outset;
+    border-color:#d2ac67;
+    border-image: initial;
+    text-transform: uppercase;
+    min-width: 88px;
+    min-height: 39px;
+    color:#d2ac67;
+}

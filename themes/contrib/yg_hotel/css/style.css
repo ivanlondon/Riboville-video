@@ -263,7 +263,7 @@ a:hover.phone {
 
 #about{
     padding: 80px 0px 125px;
-    background-color: #181b1f;
+    background-color: #fff;
 }
 .about-full-img{
     height: 480px;
@@ -331,7 +331,8 @@ a:hover.phone {
     width: auto;
 }
 #about h2{
-    font-size: 29px;
+    font-size: 25px;
+    color: #d2ac67;
 }
 #about li {
     color: #999;
@@ -346,13 +347,12 @@ a:hover.phone {
     letter-spacing: 0.5px;
 }
 .about-description {
-    padding-top: 10px;
+    padding-top: 149px;
 }
 #about p{
     font-size: 18px;
     line-height: 26px;
-    color: #999;
-    padding-right: 46px;
+    color: #000;
 }
 .about-full-img-outer {
     padding-bottom: 8px;
